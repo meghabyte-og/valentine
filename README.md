@@ -13,14 +13,6 @@ An interactive Valentine's Day-themed web application that presents users with a
 2. Selecting "Yes" navigates to `yes.html`, confirming the response.
 3. Attempting to select "No" triggers movement of the button, preventing interaction.
 
-## Installation & Usage
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/yourusername/valentine-card.git
-   cd valentine-card
-   ```
-2. Open `index.html` in a web browser.
-
 ## Project Structure
 ```
 valentine-card/
