@@ -1,0 +1,92 @@
+*{
+  margin: 1px;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.card{
+  
+  background-color: rgb(255, 192, 213);
+  color:rgb(255, 0, 153);
+  margin-top: auto;
+  border-radius: 20px;
+  width: 350px;
+  height: 500px;
+}
+.heart {
+  position:relative; 
+  width:200px; 
+  height:100;
+  margin-top:20px;
+
+}
+.heart:before , .heart:after{
+  position: absolute; 
+  content: ""; 
+  left: 50px; 
+  top: 0; 
+  width: 52px; 
+  height: 80px; 
+  background: red; /* assign a nice red color */
+  border-radius: 50px 50px 0 0; /* make the top edge round */ 
+}
+.heart:before {
+  -webkit-transform: rotate(-45deg); /* 45 degrees rotation counter clockwise */
+     -moz-transform: rotate(-45deg); 
+      -ms-transform: rotate(-45deg); 
+       -o-transform: rotate(-45deg); 
+          transform: rotate(-45deg); 
+  -webkit-transform-origin: 0 100%; /* Rotate it around the bottom-left corner */
+     -moz-transform-origin: 0 100%; 
+      -ms-transform-origin: 0 100%; 
+       -o-transform-origin: 0 100%; 
+          transform-origin: 0 100%;
+}
+.heart:after { 
+  left: 0; /* placing the right part properly */
+  -webkit-transform: rotate(45deg); /* rotating 45 degrees clockwise */
+     -moz-transform: rotate(45deg); 
+      -ms-transform: rotate(45deg); 
+       -o-transform: rotate(45deg); 
+          transform: rotate(45deg); 
+  -webkit-transform-origin: 100% 100%; /* rotation is around bottom-right corner this time */
+     -moz-transform-origin: 100% 100%; 
+      -ms-transform-origin: 100% 100%; 
+       -o-transform-origin: 100% 100%; 
+          transform-origin :100% 100%; 
+} 
+.qn{
+  background-color: beige;
+  color: black;
+  text-align: center;
+  margin: 20px;
+  border-radius: 50px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.yes {
+  width: auto;
+  height: auto;
+  background-color: rgb(247, 34, 105);
+  border-color: red;
+  border-radius: 10px;
+  font-style: oblique;
+  
+}
+.no{
+  color: white;
+  position: relative;
+  background-color: rgb(75, 72, 72);
+  border-color: rgb(0, 0, 0);
+  border-radius: 10px;
+  font-style: oblique;
+}
+.buttons{
+  display: flex;
+  justify-content: center;
+  margin:  auto;
+  margin-top: 20px; 
+}
+
+.answer{
+  color: black;
+  justify-items: center;
+}
